@@ -8,6 +8,6 @@ import retrofit2.http.Query;
 
 public interface JsonPlaceHolderApi {
 
-    @GET("posts")
-    Call<List<Post>> getPosts(@Query("Api") String APY_key);
+    @GET("posts")   // esta es la parte de la url especifica del json o lo que quiera que llamemos api
+    Call<List<Post>> getPosts(); //estamos llamando a una lista que contiene los elementos descritos en Post y lo estamos metiendo dentro de un nuevo metodo llamado getPosts()
 }
